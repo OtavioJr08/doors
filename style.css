@@ -9,7 +9,6 @@ body{
 header{
     margin-top: 10px;
 }
-a{
-    text-decoration: none;
-    color: white;
+footer{
+    text-align: center;
 }
