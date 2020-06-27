@@ -1,6 +1,7 @@
 let titulo = document.querySelector('h1#titulo');
 let audio = document.querySelector('audio');
 let body = document.querySelector('body');
+let footer = document.querySelector('footer');
 let bodyModal=document.querySelector('div#bodyModal');
 let imagem = document.createElement('img');
 
@@ -95,7 +96,7 @@ function premio(random) {
     /*
         1: Gemidão
         2: Nude do Vampeta
-        3: Loop
+        3: Prêmio
     */ 
 
     if(random==1){
@@ -113,13 +114,18 @@ function premio(random) {
         abreModal();
     }else{ //looping
         body.style.backgroundColor="red";
+        
         titulo.innerHTML="";
+        footer.innerHTML="";
+        
         portas.p1.img.src="";
         portas.p2.img.src="";
         portas.p3.img.src="";
-        while(1){
-            window.open('https://twitter.com/OtavioJr08');
-        }
+        
+        // while(1){
+        //     window.open('https://twitter.com/OtavioJr08');
+        //     body.innerHTML="0";
+        // }
     }
 }
 
