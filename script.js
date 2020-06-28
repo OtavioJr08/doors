@@ -1,6 +1,5 @@
 let titulo = document.querySelector('h1#titulo');
 let audio = document.querySelector('audio');
-let body = document.querySelector('body');
 let footer = document.querySelector('footer');
 let bodyModal=document.querySelector('div#bodyModal');
 let imagem = document.createElement('img');
@@ -95,7 +94,7 @@ function premio(random) {
 
     /*
         1: Gemidão
-        2: Nude do Vampeta
+        2: Foto Vampeta
         3: Prêmio
     */ 
 
@@ -108,24 +107,27 @@ function premio(random) {
         // Coloca a imagem dinamicamente
         imagem.setAttribute('id','imagemModal');
         imagem.setAttribute('class','img-fluid');
+        imagem.style.width="100%";
         imagem.src="imagens/vampeta.jpg";
         bodyModal.appendChild(imagem);
         
         abreModal();
-    }else{ //looping
-        body.style.backgroundColor="red";
+    }else{ //Prêmio
         
-        titulo.innerHTML="";
-        footer.innerHTML="";
-        
+        titulo.innerHTML='Você foi "dibrado"! <h4>Não tem prêmio nenhum idiota!</h4>';
         portas.p1.img.src="";
         portas.p2.img.src="";
         portas.p3.img.src="";
+
+        imagem.src="imagens/ronaldinho.gif";
+        imagem.setAttribute('css','img-fluid');
+        imagem.style.width="50%";
         
-        // while(1){
-        //     window.open('https://twitter.com/OtavioJr08');
-        //     body.innerHTML="0";
-        // }
+        let section = document.querySelector('section#conteudo');
+        section.appendChild(imagem);
+
+        setInterval(function(){ 
+            location.reload();}, 4000);
     }
 }
 
