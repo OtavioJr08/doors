@@ -127,7 +127,7 @@ function premio(random) {
         section.appendChild(imagem);
 
         setInterval(function(){ 
-            location.reload();}, 4000);
+            location.reload();}, 5000);
     }
 }
 
