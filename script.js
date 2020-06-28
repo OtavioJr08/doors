@@ -108,7 +108,7 @@ function premio(random) {
         // Coloca a imagem dinamicamente
         imagem.setAttribute('id','imagemModal');
         imagem.setAttribute('class','img-fluid');
-        imagem.src="imagens/nude.jpg";
+        imagem.src="imagens/vampeta.jpg";
         bodyModal.appendChild(imagem);
         
         abreModal();
