@@ -1,3 +1,6 @@
+window.game = new DoorsGame();
+
+//Código Antigo
 let titulo = document.querySelector('h1#titulo');
 let audio = document.querySelector('audio');
 let footer = document.querySelector('footer');
@@ -99,7 +102,7 @@ function premio(random) {
     */ 
 
     if(random==1){
-        audio.src="gemidao.mp3";
+        audio.src="audio.mp3";
         audio.play();
         audio.loop=true;
     }else if(random==2){
