@@ -5,15 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Jogo das Portas</title>
+    <title>Game</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- <link rel="stylesheet" href="https://tenor.com/view/cruzeiro-cecemvideos-cruzeir%c3%a3o-cruzeiro-gif-smile-gif-13894144"> -->
 
 </head>
 <body>
@@ -22,13 +20,13 @@
         <h1 id="title"></h1>
     </header>
    
-    <section id="conteudo">
+    <section id="content">
         <div class="container">
             
            <div class="row">
-               <div class="col-md-4 col-xs-12"><img src="" class="img-fluid" id="door1" onclick="acao_porta(1)"></div>
-               <div class="col-md-4 col-xs-12"><img src="" class="img-fluid" id="door2" onclick="acao_porta(2)"></div>
-               <div class="col-md-4 col-xs-12"><img src="" class="img-fluid" id="door3" onclick="acao_porta(3)"></div>
+               <div class="col-md-4 col-xs-12 doors"><img src="" class="img-fluid" id="door-1"></div>
+               <div class="col-md-4 col-xs-12 doors"><img src="" class="img-fluid" id="door-2"></div>
+               <div class="col-md-4 col-xs-12 doors"><img src="" class="img-fluid" id="door-3"></div>
            </div>   
             
         </div>
@@ -52,11 +50,9 @@
         </div>
     
     </footer>
-
-    <audio src=""></audio>
   
     <!-- Modal -->
-    <div class="modal fade" id="modalPremio" tabindex="-1" role="dialog" aria-labelledby="modalPremioLabel" aria-hidden="true">
+    <div class="modal fade" id="modalAward" tabindex="-1" role="dialog" aria-labelledby="modalAwardLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 
