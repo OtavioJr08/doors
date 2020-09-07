@@ -1,2 +1,3 @@
 # projeto-teste
- Projeto teste em JavaScript
+
+Projeto para fins de aprendizado na linguagem JavaScript. 
